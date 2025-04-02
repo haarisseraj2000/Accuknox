@@ -5,7 +5,8 @@
 
 # Ans 1: By default, Django signals are executed synchronously.
 # code snippet:
- Inline `code`
+ `code`
+``` 
 from django.db.models.signals import post_save
 
 from django.dispatch import receiver
@@ -19,5 +20,7 @@ def my_handler(sender, instance, created, **kwargs):
     print("Signal handler started")
     time.sleep(2)  
     print("Signal handler finished")
+
+```
  
     
